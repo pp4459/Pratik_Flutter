@@ -8,14 +8,15 @@ void main() {
 
         int temp = num ;
 	int rem = 0;
+	int rev = 0;
 
 	while (num!=0){
 	
 		int rem = num%10;
-		rem = rem*10+rem;
+		rev = rev*10+rem;
 		num = num~/10;
 	}
-	if(temp==rem) {
+	if(temp==rev) {
 		print("Palindrome Number");
 	}
 	else{
